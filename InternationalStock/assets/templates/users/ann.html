@@ -1,0 +1,47 @@
+
+{% extends 'users/userbase.html' %}
+{% block contents %}
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+
+
+ <section id="intro">
+
+    <div class="intro-text">
+
+
+      <p><h3 align="center" style="color:green;font-weight:bold;">ANN ML Results</h3></p>
+
+         <form action="" method="POST" class="text-primary" style="width:100%">
+                    {% csrf_token %}
+        <center>
+            <h3>ANN Results</h3>
+
+
+         </center>
+         </form>
+    </div>
+  </section>
+
+
+
+
+{% endblock %}
+
